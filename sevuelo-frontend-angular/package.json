@@ -14,7 +14,7 @@
     "@angular/animations": "^16.2.6",
     "@angular/common": "^16.2.6",
     "@angular/compiler": "^16.2.6",
-    "@angular/core": "^116.2.6",
+    "@angular/core": "^16.2.6",
     "@angular/forms": "^16.2.6",
     "@angular/platform-browser": "^16.2.6",
     "@angular/platform-browser-dynamic": "^16.2.6",
@@ -28,9 +28,9 @@
     "@angular-devkit/build-angular": "^16.2.3",
     "@angular/cli": "^16.2.3",
     "@angular/compiler-cli": "^16.2.6",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.7.1",
     "jasmine-spec-reporter": "~5.0.0",
@@ -42,6 +42,7 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.9.5"
+    "typescript": "~4.9.5",
+    "webdriver-manager": "^12.1.9"
   }
 }

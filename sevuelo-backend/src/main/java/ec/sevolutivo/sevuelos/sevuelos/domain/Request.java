@@ -18,7 +18,7 @@ public class Request implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequenceGenerator")
-    @SequenceGenerator(name = "sequenceGenerator")
+    @SequenceGenerator(name = "sequenceGenerator", sequenceName = "request_seq", allocationSize = 1)
     private Long id;
 
     @NotNull

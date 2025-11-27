@@ -3,6 +3,7 @@
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
 const { SpecReporter, StacktraceOption } = require('jasmine-spec-reporter');
+const path = require('path');
 
 /**
  * @type { import("protractor").Config }
@@ -15,6 +16,7 @@ exports.config = {
   capabilities: {
     browserName: 'chrome'
   },
+  chromeDriver: path.resolve(__dirname, './chromedriver/chromedriver'),
   directConnect: true,
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
