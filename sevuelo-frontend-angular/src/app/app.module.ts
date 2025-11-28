@@ -1,29 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { ErrorHandler, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RequestsComponent } from './requests/requests.component';
-import { NewRequestComponent } from './new-request/new-request.component';
-import { RequestDetailComponent } from './request-detail/request-detail.component';
-
+import { RequestsModule } from './features/requests/requests.module';
+import { GlobalExceptionHandler } from './core/handlers/global-exception-handler';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RequestsComponent,
-    NewRequestComponent,
-    RequestDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    HttpClientModule
+    RequestsModule
   ],
-  providers: [],
+  providers: [
+    { provide: ErrorHandler, useClass: GlobalExceptionHandler },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

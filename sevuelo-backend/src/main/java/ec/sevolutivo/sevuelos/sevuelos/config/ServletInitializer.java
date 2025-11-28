@@ -1,5 +1,6 @@
-package ec.sevolutivo.sevuelos.sevuelos;
+package ec.sevolutivo.sevuelos.sevuelos.config;
 
+import ec.sevolutivo.sevuelos.sevuelos.SevuelosApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
